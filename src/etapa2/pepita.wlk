@@ -21,6 +21,12 @@ object pepita {
 		if (energia % 20 == 0) { cuanto += 15 }
 		return cuanto
 	}
+		method saliraComer()
+	{
+		self.volar()
+		self.comer(alpiste, 80)
+		self.volar(5)
+	}
 	
 	method salirAComer() {
 		self.volar(5){}		// "self" es una referencia al objeto que recibe el mensaje
